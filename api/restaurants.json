@@ -1,8 +1,32 @@
 [
-"cucina-antica",
-"chef-leus",
-"la-villa",
-"dutch-mill",
-"archies-grill",
-"folinos"
+    {
+        "id": 1,
+        "name": "cucina-antica",
+        "link": "./api/routes.cucina-antica.json"
+    },
+    {
+        "id": 2,
+        "name": "chef-leus",
+        "link": "./api/routes.chef-leus.json"
+    },
+    {
+        "id": 3,
+        "name": "la-villa",
+        "link": "/api/routes.dutch-mill.json"
+    },
+    {
+        "id": 4,
+        "name": "dutch-mill",
+        "link": "/api/routes/dutch-mill.json"
+    },
+    {
+        "id": 5,
+        "name": "archies-grill",
+        "link": "/api/routes/archies-gril.json"
+    },
+    {
+        "id": 6,
+        "name": "folinos",
+        "link": "/api/routes/folinos.json"
+    }
 ]

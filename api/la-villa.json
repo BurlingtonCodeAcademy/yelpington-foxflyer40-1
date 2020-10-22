@@ -1,13 +1,19 @@
 {
-    "id": "",
-    "name": "",
-    "address": "",
-    "phone number": "",
-    "hours": "",
-    "notes": [
-        "Their sriracha breakfast sandwich is quite good.",
-        "Every Thursday is meatloaf day."
+    "id": 3,
+    "displayName": "La Villa Bistro and Pizzeria",
+    "address": "3762 Shelburne Rd, Shelburne, VT 05482",
+    "phone number": "(802) 985-2596",
+    "hours": [
+        "Sunday through Thursday 4: 00-8: 00 PM",
+        "Friday and Saturday 4: 00-8: 30 PM",
+        "Take out only for lunch 12 PM - 4 PM"
     ],
-    "lat": "",
-    "lng": ""
+    "tagLine": "La Villa is a family owned and chef operated fresh Italian restaurant since 1995, proudly serving lunch and dinner every day.",
+    "notes": [
+        "Good Italian food with some local ingredients and homemade pasta, great service.",
+        "Hearty, fairly priced food in an active atmosphere.",
+        "Wonderful selection of Italian favorites. Crab cakes appetizer was delightful start. Had Chicken Florentine the white wine sauce was excellent."
+    ],
+    "lat": "44.401503",
+    "lng": "-73.219336"
 }

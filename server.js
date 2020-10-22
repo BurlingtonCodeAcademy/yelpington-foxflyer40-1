@@ -2,10 +2,13 @@
 const { request } = require('express')
 const express = require('express')
 const app = express()
+
 // set up port options
 const port = process.env.PORT || 8080
+
 // create absolute paths
 const path = require('path')
+
 // static middleware for routing
 app.use(express.static('.'))
 
@@ -15,7 +18,9 @@ app.get('/', (req, res) => {
     res.send(`Yelpington!`)
 })
 
-
+app.get('/restaurants', (req, res) => {
+    res.sendFile(path.resolve("api/restaurants.json"))
+})
 
 
 

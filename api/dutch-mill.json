@@ -1,13 +1,19 @@
 {
-    "id": "",
-    "name": "",
-    "address": "",
-    "phone number": "",
-    "hours": "",
-    "notes": [
-        "Their sriracha breakfast sandwich is quite good.",
-        "Every Thursday is meatloaf day."
+    "id": 4,
+    "displayName": "The Dutch Mill Family Restaurant",
+    "address": "4309 Shelburne Rd, Shelburne, VT 05482",
+    "phone number": "(802) 985-3568",
+    "hours": [
+        "Open For Indoor Dining, Outdoor Dining, and Curbside Takeout Only",
+        "Friday-Tuesday",
+        "Serving Breakfast and Lunch: 7: 30am - 2: 00pm"
     ],
-    "lat": "",
-    "lng": ""
+    "tagLine": "Old-fashioned, family-run institution specializing in homestyle breakfast & lunch diner classics.",
+    "notes": [
+        "Small place, good food, very friendly fast service, parking in rear",
+        "Fantastic diner food at a fun location, served by wonderful folks.",
+        "Good home cooking in a relaxed setting. So friendly! Would highly recommend the Montreal smoked meat special - they were cooking it up in the smoker outside when we arrived!"
+    ],
+    "lat": "44.393515",
+    "lng": "-73.220512"
 }

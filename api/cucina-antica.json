@@ -1,13 +1,17 @@
 {
-    "id": "",
-    "name": "",
-    "address": "",
-    "phone number": "",
-    "hours": "",
-    "notes": [
-        "Their sriracha breakfast sandwich is quite good.",
-        "Every Thursday is meatloaf day."
+    "id": 1,
+    "displayName": "Cucina Antica",
+    "address": "Shelburne Shopping Park, Shelburne, VT 05482",
+    "phone number": "(802) 985-1117",
+    "hours": [
+        "OPEN for Curb-Side Carry-Out 4-8pm Tuesday through Sunday"
     ],
-    "lat": "",
-    "lng": ""
+    "tagLine": "Casual, family-focused spot preparing Mediterranean specialties such as pizza, pasta & Greek dishes.",
+    "notes": [
+        "Best Pizza in Chittenden County!",
+        "I love Cucina. Nice vibe, great staff, and amazing food. Best restaurant!",
+        "Good menu, good food, nice selection and some innovative dishes."
+    ],
+    "lat": "44.379508",
+    "lng": "-73.225148"
 }

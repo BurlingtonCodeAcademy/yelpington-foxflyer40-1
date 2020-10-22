@@ -1,13 +1,19 @@
 {
-    "id": "",
-    "name": "",
-    "address": "",
-    "phone number": "",
-    "hours": "",
-    "notes": [
-        "Their sriracha breakfast sandwich is quite good.",
-        "Every Thursday is meatloaf day."
+    "id": 6,
+    "displayName": "Folino's Wood Fired Pizza",
+    "address": "6305 Shelburne Rd, Shelburne, VT 05482",
+    "phone number": "(802) 881-8822",
+    "hours": [
+        "12: 00-9: 00, 7 Days a Week!",
+        "Outdoor seating is available.",
+        "Patio service by online reservation only."
     ],
-    "lat": "",
-    "lng": ""
+    "tagLine": "Rustic counter-serve joint providing Neapolitan-style pies, salad & frosted mugs for BYOB.",
+    "notes": [
+        "Legit food fired pizza with outdoor seating available and friendly staff.",
+        "We ordered the house salad and were impressed by the fresh, tasty ingredients.",
+        "Reliable superior tasty pizzas and beer."
+    ],
+    "lat": "44.366148",
+    "lng": "-73.232750"
 }
