@@ -10,19 +10,23 @@ const port = process.env.PORT || 8080
 const path = require('path')
 
 // static middleware for routing
-app.use(express.static('.'))
+app.use(express.static('public'))
 
 
 // home route
 app.get('/', (req, res) => {
-    res.send(`Yelpington!`)
+       res.sendFile(path.resolve("public/index.html"))
 })
 
 app.get('/restaurants', (req, res) => {
     res.sendFile(path.resolve("api/restaurants.json"))
+    
 })
 
-
+app.get('/restaurants/:name', (req, res) => {
+    let name = req.params.name
+    res.sendFile(path.resolve(`api/${name}.json`))
+})
 
 
 app.listen(port, () => {
