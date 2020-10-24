@@ -37,6 +37,6 @@ function restData(data) {
     myMap.setView([data.lat, data.lng], 17)
     markName = L.marker([data.lat, data.lng])
         .addTo(myMap)
-        .bindTooltip(dispName)
+        .bindTooltip(displayName)
 }
 
