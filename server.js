@@ -13,22 +13,37 @@ const path = require('path')
 app.use(express.static('public'))
 
 
-// home route
+// route to home page html 
 app.get('/', (req, res) => {
-       res.sendFile(path.resolve("public/index.html"))
+    res.sendFile(path.resolve("./public/index.html"))
 })
 
+//route to single restaurant page
+app.get('/oneRestPage/:restId', (req, res) => {
+    let restId = req.params.restId
+   
+    res.sendFile(path.resolve('./public/oneRestPage.html'))
+
+})
+
+// get index list of retaurant IDs
 app.get('/restaurants', (req, res) => {
     res.sendFile(path.resolve("api/restaurants.json"))
-    
 })
 
+//get a specific restaurant json
 app.get('/restaurants/:name', (req, res) => {
     let name = req.params.name
     res.sendFile(path.resolve(`api/${name}.json`))
 })
 
-
 app.listen(port, () => {
     console.log('Server running on port ' + port)
 })
+
+// functions
+let restDir = path.resolve('./api')
+
+function oneRestFilePath(restId) {
+    return path.join(restDir, restId + '.json')
+}

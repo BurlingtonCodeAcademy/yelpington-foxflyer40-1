@@ -41,6 +41,7 @@ html, body {
 #side-bar {
     width: 27.75%;
     font-family: 'Montserrat Alternates', sans-serif;
+    overflow: auto;
 }
 
 #side-bar, #p {
@@ -61,12 +62,13 @@ html, body, #map {
     width: 99.5%;
     height: 18vh;
     font-family: 'Montserrat Alternates', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
 }
 
 #footer-box, h3 {
     margin: .1em;
+}
+
+#footer-box, #p {
+    font-size: .8rem;
 }

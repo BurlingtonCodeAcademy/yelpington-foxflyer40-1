@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href='./index.css' rel='stylesheet' />
+    <link href='/index.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -22,19 +22,26 @@
 <body>
     <div id="page-wrapper">
         <div class='container' id='header-box'>
-            <h1>YELP-ington !</h1>
+            <h1>YELPburne !</h1>
         </div>
         <div id='center-box'>
-            <div class='container' id='side-bar'></div>
+            <div class='container' id='side-bar'>
+<p id='displayName' ></p>
+<p id='tagLine' ></p>
+<p id='address' ></p>
+<p id='phone' ></p>
+<p id='hours' ></p>
+            </div>
             <div class='container' id='map-box'></div>
         </div>
         <div class='container' id='footer-box'>
+            <p id='notes'></p>
             <h3 id='fWidth'></h3>
             <h3 id='fHeight'></h3>
         </div>
     </div>
 
-    <script src="oneRestPage.js"></script>
+    <script src="/oneRestPage.js"></script>
 </body>
 
 </html>
