@@ -8,15 +8,10 @@ let hours = document.getElementById('hours')
 let notes = document.getElementById('notes')
 let footer = document.getElementById('footer-box')
 
-
-
 //create map
 let myMap = L.map('map-box').setView([44.385, -73.22755], 13.1)
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(myMap)
-
-
-
 
 // extract single restaurant from url
 let thisRestaurant = document.location.pathname.split('/').splice(-1)
@@ -26,8 +21,6 @@ fetch('/restaurants/' + thisRestaurant)
     .then((res) => res.json())
     .then(restData)
 
-  
-
 function restData(data) {
     console.log('data = ', data)
     // reset map center and zoom to single restaurant location
@@ -35,7 +28,6 @@ function restData(data) {
     markName = L.marker([data.lat, data.lng])
         .addTo(myMap)
         .bindTooltip(displayName)
-
     // assign values from data file to DOM elements
     displayName.textContent = data.displayName
     tagLine.textContent = data.tagLine
@@ -46,7 +38,7 @@ function restData(data) {
     hoursOpen.forEach(entry => {
         let detail = entry
         let hoursDetail = document.createElement('h6')
-        hoursDetail.className='detail'
+        hoursDetail.className = 'detail'
         hoursDetail.textContent = detail
         sideBar.appendChild(hoursDetail)
     });
@@ -55,11 +47,9 @@ function restData(data) {
     comments.forEach(comment => {
         let eachComment = comment
         let commentDetail = document.createElement('h6')
-        commentDetail.className='detail'
+        commentDetail.className = 'detail'
         commentDetail.textContent = `"${eachComment}"`
         footer.appendChild(commentDetail)
     });
-  
-
 }
 

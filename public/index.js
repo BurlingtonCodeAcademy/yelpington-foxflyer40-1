@@ -8,8 +8,8 @@ let myMap = L.map('map-box').setView([44.385, -73.22755], 13.1)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(myMap)
 
 // reset map for mobil landscape view - zoom out and re-center
-window.addEventListener('orientationchange', doOnOrientationChange);
-function doOnOrientationChange() {
+window.addEventListener('orientationchange', orientationChanged);
+function orientationChanged() {
     if (window.screen.height < 420) {
         myMap.setView([44.388, -73.22755], 12)
     } else {
