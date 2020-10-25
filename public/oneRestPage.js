@@ -1,7 +1,5 @@
 // get DOM Elements
 let sideBar = document.getElementById('side-bar')
-let widthBox = document.getElementById('fWidth')
-let heightBox = document.getElementById('fHeight')
 let displayName = document.getElementById('displayName')
 let tagLine = document.getElementById('tagLine')
 let address = document.getElementById('address')
@@ -10,13 +8,15 @@ let hours = document.getElementById('hours')
 let notes = document.getElementById('notes')
 let footer = document.getElementById('footer-box')
 
-widthBox.textContent = window.screen.width;
-heightBox.textContent = window.screen.height;
+
 
 //create map
 let myMap = L.map('map-box').setView([44.385, -73.22755], 13.1)
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(myMap)
+
+
+
 
 // extract single restaurant from url
 let thisRestaurant = document.location.pathname.split('/').splice(-1)
@@ -45,7 +45,8 @@ function restData(data) {
     let hoursOpen = data.hours
     hoursOpen.forEach(entry => {
         let detail = entry
-        let hoursDetail = document.createElement('p')
+        let hoursDetail = document.createElement('h6')
+        hoursDetail.className='detail'
         hoursDetail.textContent = detail
         sideBar.appendChild(hoursDetail)
     });
@@ -53,8 +54,9 @@ function restData(data) {
     let comments = data.notes
     comments.forEach(comment => {
         let eachComment = comment
-        let commentDetail = document.createElement('p')
-        commentDetail.textContent = eachComment
+        let commentDetail = document.createElement('h6')
+        commentDetail.className='detail'
+        commentDetail.textContent = `"${eachComment}"`
         footer.appendChild(commentDetail)
     });
   

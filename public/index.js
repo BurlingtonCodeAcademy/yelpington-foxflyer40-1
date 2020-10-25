@@ -1,15 +1,17 @@
 
 // import DOM Elements
 let sideBar = document.getElementById('side-bar')
-let widthBox = document.getElementById('fWidth')
-let heightBox = document.getElementById('fHeight')
-widthBox.textContent = window.screen.width;
-heightBox.textContent = window.screen.height;
+// widthBox.textContent = window.screen.width;
+// heightBox.textContent = window.screen.height;
 
 //create map
 let myMap = L.map('map-box').setView([44.385, -73.22755], 13.1)
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(myMap)
+
+if (window.screen.height < 420 ) {
+    myMap.setView([44.388, -73.22755], 12)
+}
 
 // get list of restaurants index file as an array
 fetch('restaurants')
@@ -38,7 +40,9 @@ fetch('restaurants')
                     // add display name as a child list element in the sidebar
                     //create DOM elements needed
                     let anchor = document.createElement('a')
-                    let nameTag = document.createElement('p')
+                    anchor.style.color ='rgb(128, 37, 37)'
+                    let nameTag = document.createElement('h5')
+                    nameTag.className='smHeading'
                     // create entry for sidebar
                     anchor.appendChild(nameTag)
                     anchor.href = `/oneRestPage/${id}` // href redirect to single restaurant page via server
