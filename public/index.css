@@ -1,5 +1,8 @@
+/* add fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+/* set html and body to control page scroll */
 html, body {
     margin: 0;
     padding: 0;
@@ -7,22 +10,21 @@ html, body {
     color: rgb(128, 37, 37);
 }
 
+/* set font size by class */
 .lgHeading {
     font-size: 2rem;
 }
-
 .medHeading {
     margin: .1rem .8rem;
 }
-
 .smHeading {
     margin: .6rem .8rem;
 }
-
 .detail {
     margin: .6rem .8rem;
 }
 
+/* Layout main components in relation to each other */
 #page-wrapper {
     width: 100%;
     height: 100%;
@@ -37,7 +39,6 @@ html, body {
     background-attachment: fixed;
     background-size: 100vw 100vh;
 }
-
 #header-box {
     width: 99.5%;
     height: 12vh;
@@ -46,7 +47,6 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
 #center-box {
     width: 100%;
     height: 70vh;
@@ -54,7 +54,6 @@ html, body {
     justify-content: center;
     overflow: hidden;
 }
-
 #side-bar {
     width: 30%;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -64,17 +63,14 @@ html, body {
     border-top: .2rem solid darkgoldenrod;
     border-left: .2rem solid darkgoldenrod;
 }
-
 #map-box {
     border: .2rem solid darkgoldenrod;
     width: 60%;
 }
-
 #map {
     height: 100%;
     width: 100%;
 }
-
 #footer-box {
     width: 99.5%;
     height: 18vh;
@@ -83,6 +79,7 @@ html, body {
     text-align: center;
 }
 
+/* add media query for larger screens */
 @media (min-width: 825px) {
     .lgHeading {
         font-size: 5rem;
@@ -98,8 +95,5 @@ html, body {
     .detail {
         font-size: 1rem;
         margin: .6rem 1rem;
-    }
-    #map-box {
-        border: 1rem double darkgoldenrod;
     }
 }
