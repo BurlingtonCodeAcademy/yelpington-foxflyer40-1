@@ -12,7 +12,6 @@ const path = require('path')
 // static middleware for routing
 app.use(express.static('public'))
 
-
 // route to home page html 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve("./public/index.html"))
@@ -37,13 +36,8 @@ app.get('/restaurants/:name', (req, res) => {
     res.sendFile(path.resolve(`api/${name}.json`))
 })
 
+// start server
 app.listen(port, () => {
     console.log('Server running on port ' + port)
 })
 
-// functions
-let restDir = path.resolve('./api')
-
-function oneRestFilePath(restId) {
-    return path.join(restDir, restId + '.json')
-}
